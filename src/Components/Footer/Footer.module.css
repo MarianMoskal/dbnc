@@ -1,0 +1,13 @@
+.container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 20px;
+}

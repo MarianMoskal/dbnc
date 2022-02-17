@@ -1,0 +1,10 @@
+.list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  background-color: aquamarine;
+}

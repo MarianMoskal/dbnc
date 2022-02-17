@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  font-family: Lato;
+  font-style: italic;
+  letter-spacing: 0.46px;
+  font-weight: 500;
+  background-color: #117edd;
+  color: #7fc7ff;
+  height: 541.44px;
+  width: 528.96px;
+  padding: 18px 29px;
+}
+
+.nameLabel {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.name {
+  letter-spacing: -0.4px;
+  line-height: normal;
+  font-size: large;
+  padding: 0 11px;
+  margin-bottom: 31px;
+  display: block;
+  width: 100%;
+  height: 44px;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #8fc2ed;
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 39px;
+}
+
+.dateContainer {
+  display: inline-block;
+  width: 194px;
+  margin-right: 18px;
+}
+
+.dateLabel {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+
+.date {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #8fc2ed;
+  outline: none;
+  padding: 0;
+}
+
+.countryContainer {
+  display: inline-block;
+}
+
+.countryLabel {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 9px;
+}
+
+.country {
+  width: 258.5px;
+  height: 44px;
+  padding: 0 11px;
+  letter-spacing: -0.9px;
+  font-weight: 500px;
+  font-size: large;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #8fc2ed;
+  outline: none;
+}
+
+.schoolLabel {
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 9px;
+}
+
+.school {
+  letter-spacing: -0.4px;
+  line-height: normal;
+  font-size: large;
+  padding: 0 11px;
+  margin-bottom: 31px;
+  display: block;
+  width: 100%;
+  height: 44px;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #8fc2ed;
+  outline: none;
+}
+
+.detailsLabel {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.details {
+  width: 100%;
+  height: 159px;
+  padding: 10px 12px;
+  font-style: italic;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #8fc2ed;
+  outline: none;
+}
