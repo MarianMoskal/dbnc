@@ -1,0 +1,50 @@
+.container {
+  text-align: center;
+  margin: auto;
+}
+
+.list {
+  padding: 0 50px;
+  text-align: initial;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  width: 180px;
+  background-color: rgb(247, 250, 53);
+  border: none;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.subTitle {
+  text-align: initial;
+  padding-left: 70px;
+  font-weight: 700;
+}
+
+.word {
+  display: inline-block;
+  text-align: left;
+  font-weight: 600;
+  width: 180px;
+  padding-left: 20px;
+  color: #000;
+}
+
+.scoreWord {
+  color: green;
+}
+
+.scoreValue {
+  margin-left: 20px;
+  color: tomato;
+}
+
+.userWord {
+  color: red;
+}

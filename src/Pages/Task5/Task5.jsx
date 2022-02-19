@@ -1,9 +1,68 @@
-import React from 'react'
+import { useEffect, useState } from "react";
+import css from "./Task5.module.css";
 
 export default function Task5() {
+  const [userWord, setUserWord] = useState("");
+  const [rhymeWords, setRhymeWords] = useState(null);
+
+  useEffect(() => {
+    const word = prompt(
+      "Hello! If you enter a word I'll try to find rhyme for it :)",
+      "Canada"
+    );
+    setUserWord(word);
+  }, []);
+
+  useEffect(() => {
+    if (userWord) {
+      async function fetchData(word) {
+        try {
+          const response = await fetch(
+            `https://api.datamuse.com/words?rel_rhy=${word}`
+          );
+          const data = await response.json();
+          if (data && data.length !== 0) {
+            return setRhymeWords(data);
+          }
+        } catch (error) {
+          alert(error);
+        }
+      }
+      fetchData(userWord);
+    }
+  }, [userWord]);
+
   return (
-    <div>Task5</div>
-  )
+    <div className={css.container}>
+      <button
+        type="button"
+        className={css.button}
+        onClick={() => window.location.reload()}
+      >
+        Try again
+      </button>
+
+      {rhymeWords ? (
+        <>
+          <h2>
+            Your word: <span className={css.userWord}>{userWord}</span>
+          </h2>
+          <p className={css.subTitle}>Matches:</p>
+          <ol className={css.list}>
+            {rhymeWords.map(({ word, score }) => (
+              <li key={word}>
+                <span className={css.word}>{word}</span>
+                <span className={css.scoreWord}>-- score:</span>
+                <span className={css.scoreValue}>{score}</span>
+              </li>
+            ))}
+          </ol>
+        </>
+      ) : (
+        <h1 className={css.title}>No matches found</h1>
+      )}
+    </div>
+  );
 }
 
 // (5/5)
